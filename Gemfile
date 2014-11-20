@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :test, :development do
-  gem 'rspec-rails', "~>2.4"
+  gem 'rspec-rails', ">=1.3.2"
   gem "factory_girl_rails"
 end
 

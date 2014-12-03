@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  get "users/index"
+  get "users/:id/edit", :to => 'users#edit', as: :users_edit
+  patch "users/:id", :to => 'users#update', as: :users_update
+  delete "users/destroy", :to => 'users#destroy'
+
   devise_for :users
   resources :roles
 

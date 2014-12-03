@@ -1,0 +1,14 @@
+<% menu_items = [
+  { :link => memos_path,
+    :name => '一覧表示' },
+  { :link => new_memo_path, :name => '新規追加' },
+  { :link => 'http://www.ruby-lang.org/ja/', :name => 'ruby 公式サイト' },
+  { :link => '', :name => '自分の課題ページ', :disabled => true }
+  ] -%>
+<div id="menu_bar">
+  <% menu_items.each_with_index do | item, index | -%>
+    <% if index > 0 %> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<% end -%>
+    <%= menu_link_to item -%>
+  <% end -%>
+</div>
+

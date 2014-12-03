@@ -1,2 +1,12 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<% if I18n.locale == :ja %>
+  <%= image_tag('vegetables.jpg')%>
+<% else %>
+  <%= image_tag('vegetables.jpg')%>
+<% end %>
+<h1><%= t :welcome_top %></h1>
+<%= t :staff_entrance %> ==>
+<%= t :click_here %>
+
